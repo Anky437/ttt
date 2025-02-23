@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage that will appear in the browser tab -->
+    <title>Tic Tac Toe</title>
+
+    <!-- Linking to the external CSS stylesheet to style the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Message container to show the winner or a draw message -->
+    <div class="msg-container hide">
+        <p id="msg">WINNER</p> <!-- The message that will display the winner or a draw -->
+        <button id="new-btn">NEW GAME</button> <!-- Button to start a new game -->
+    </div>
+
+    <main>
+        <!-- The main content of the page -->
+        <h1 style="color: #FF6B6B; text-shadow: 2px 2px 6px rgba(255, 107, 107, 0.5);">
+            Tic Tac Toe
+        </h1> <!-- The main heading of the game with a red color and shadow effect for emphasis -->
+        
+        <div class="container">
+            <!-- Container that holds the game grid -->
+            <div class="game">
+                <!-- The game grid consists of 9 buttons which are the clickable boxes for the Tic Tac Toe game -->
+                <button class="box"></button> <!-- Button representing the first box -->
+                <button class="box"></button> <!-- Button representing the second box -->
+                <button class="box"></button> <!-- Button representing the third box -->
+                <button class="box"></button> <!-- Button representing the fourth box -->
+                <button class="box"></button> <!-- Button representing the fifth box -->
+                <button class="box"></button> <!-- Button representing the sixth box -->
+                <button class="box"></button> <!-- Button representing the seventh box -->
+                <button class="box"></button> <!-- Button representing the eighth box -->
+                <button class="box"></button> <!-- Button representing the ninth box -->
+            </div>
+        </div>
+        
+        <button id="reset-btn">RESET</button> <!-- Button to reset the game to its initial state -->
+    </main>
+    
+    <!-- Linking to the external JavaScript file where the game logic is written -->
+    <script src="script.js"></script>
+</body>
+</html>

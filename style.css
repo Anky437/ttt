@@ -1,0 +1,63 @@
+
+*{
+    /*  *means this applies to all of document and its a good practice to start with margin,padding=0 */
+    margin: 0;
+    padding: 0;
+}
+
+/* styling body */
+body{
+    background-color: #548687;
+
+    /* alligning everything to center */
+    text-align: center;
+}
+
+/* now let us style the container */
+.container{
+    height: 70vh
+/* means at everymoment 70% of out veiwport height is occupied
+by out "game" container */
+}
+
+/* setting play area within the playground */
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    /* means with the 70% of the total game area, 60% of it will be for the actual playable grid
+    vmin=viewport minimum */
+
+    /* now as soon as we added the width the boxes tried to fit in as hard as they can but cant on their own
+    so we use flex to tell them to allign themselves in single line first */
+
+    display: flex;
+
+    /*now we can tell them to not sqish your og dimensions and jagah nahi hai toh next line me aao*/
+    flex-wrap: wrap;
+
+    /* now let us allign the boxes in centre */
+    justify-content: center;
+
+    /* also allign X and O to the cener of the now alligned boxes */
+    align-items: center;
+
+    /* now let us create some spaces in between boxes for aesthetic */
+    gap: 1.5vmin;
+}
+
+/* setting boxes */
+.box{
+    height: 18vmin;
+    width: 18vmin;
+
+    /* let us give boxes a curve edge for aesthetic */
+    border-radius: 1rem ;
+
+    /* and let us remove the ugly border */
+    border: none;
+
+    /* let us give it a small shadow */
+    box-shadow: 0.0.1rem rgba(0,0,0,0,0.1);
+
+    /* dimensions of boxes within the now 60% play area */
+}
